@@ -131,6 +131,7 @@
     
     if(_showDetailView)
     {
+        [self updateDetailView];
         
         _vwDetail.hidden = NO;
 //        _btnControl.hidden = NO;
@@ -195,7 +196,7 @@
                 KPAnnotation *a = _arrAnnotations[i];
                 if (a.coordinate.latitude == cluster.coordinate.latitude && a.coordinate.longitude == cluster.coordinate.longitude)
                 {
-                    _selectedLocation = _arrAnnotations[i];
+                    _selectedLocation = _arrShopData[i];
                     break;
                 }
             }
@@ -282,6 +283,14 @@
     }];
 }
 
-
+-(void)updateDetailView
+{
+    if (_selectedLocation != nil)
+    {
+        _lblDetailName.text = _selectedLocation.name;
+        _lblDetailAdress.text = _selectedLocation.address;
+        _lblDetailCity.text = _selectedLocation.city;
+    }
+}
 
 @end

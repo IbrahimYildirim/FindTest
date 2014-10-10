@@ -70,6 +70,12 @@
         newLocation.address = jsonElement[@"Adress"];
         newLocation.latitude = jsonElement[@"Latitude"];
         newLocation.longitude = jsonElement[@"Longtitude"];
+        newLocation.city = jsonElement[@"City"];
+        newLocation.category = jsonElement[@"Category"];
+        newLocation.zip = jsonElement[@"Zip"];
+        newLocation.web = jsonElement[@"Web"];
+        newLocation.phone = jsonElement[@"Phone"];
+        
         
         // Add this question to the locations array
         [_locations addObject:newLocation];

@@ -14,5 +14,10 @@
 @property (nonatomic, strong) NSString *longitude;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) NSString *zip;
+@property (nonatomic, strong) NSString *category;
+@property (nonatomic, strong) NSString *web;
+@property (nonatomic, strong) NSString *phone;
 
 @end
