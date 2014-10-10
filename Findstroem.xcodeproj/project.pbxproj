@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0D4DA819E7E4C70031281E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D4DA719E7E4C70031281E /* Foundation.framework */; };
+		0F0D4DB019E7E4EA0031281E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D4DAF19E7E4EA0031281E /* UIKit.framework */; };
 		0F86603119E6B9F600C3DE24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86603019E6B9F600C3DE24 /* main.m */; };
 		0F86603419E6B9F600C3DE24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86603319E6B9F600C3DE24 /* AppDelegate.m */; };
-		0F86603719E6B9F600C3DE24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86603619E6B9F600C3DE24 /* ViewController.m */; };
-		0F86603A19E6B9F600C3DE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F86603819E6B9F600C3DE24 /* Main.storyboard */; };
 		0F86603C19E6B9F600C3DE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F86603B19E6B9F600C3DE24 /* Images.xcassets */; };
 		0F86603F19E6B9F600C3DE24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F86603D19E6B9F600C3DE24 /* LaunchScreen.xib */; };
 		0F86604B19E6B9F600C3DE24 /* FindstroemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86604A19E6B9F600C3DE24 /* FindstroemTests.m */; };
+		0F86605919E6BAB500C3DE24 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86605719E6BAB500C3DE24 /* MainViewController.m */; };
+		0F86605A19E6BAB500C3DE24 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F86605819E6BAB500C3DE24 /* MainViewController.xib */; };
+		0F86606019E6BAF000C3DE24 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86605D19E6BAF000C3DE24 /* HomeModel.m */; };
+		0F86606119E6BAF000C3DE24 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86605F19E6BAF000C3DE24 /* Location.m */; };
+		0F86606319E6BEF900C3DE24 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F86606219E6BEF900C3DE24 /* MapKit.framework */; };
+		0F86607E19E6C0E400C3DE24 /* NGAParallaxMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86607D19E6C0E400C3DE24 /* NGAParallaxMotion.m */; };
+		0F86609019E6C6EC00C3DE24 /* KPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86608219E6C6EC00C3DE24 /* KPAnnotation.m */; };
+		0F86609119E6C6EC00C3DE24 /* KPAnnotationTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86608519E6C6EC00C3DE24 /* KPAnnotationTree.m */; };
+		0F86609219E6C6EC00C3DE24 /* KPClusteringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86608819E6C6EC00C3DE24 /* KPClusteringController.m */; };
+		0F86609319E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86608C19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m */; };
+		0F86609419E6C6EC00C3DE24 /* NSArray+KP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86608F19E6C6EC00C3DE24 /* NSArray+KP.m */; };
+		0F86609819E6C7A000C3DE24 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86609719E6C7A000C3DE24 /* Annotation.m */; };
+		E1541123B802F98E87548D63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A640B3FEEE7D8AA8B9368 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +40,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9A640B3FEEE7D8AA8B9368 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0D4DA719E7E4C70031281E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F0D4DAF19E7E4EA0031281E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F86602B19E6B9F600C3DE24 /* Findstroem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findstroem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F86602F19E6B9F600C3DE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86603019E6B9F600C3DE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F86603219E6B9F600C3DE24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F86603319E6B9F600C3DE24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F86603519E6B9F600C3DE24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F86603619E6B9F600C3DE24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0F86603919E6B9F600C3DE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F86603B19E6B9F600C3DE24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F86603E19E6B9F600C3DE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F86604419E6B9F600C3DE24 /* FindstroemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindstroemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F86604919E6B9F600C3DE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86604A19E6B9F600C3DE24 /* FindstroemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindstroemTests.m; sourceTree = "<group>"; };
+		0F86605619E6BAB500C3DE24 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0F86605719E6BAB500C3DE24 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0F86605819E6BAB500C3DE24 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0F86605C19E6BAF000C3DE24 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		0F86605D19E6BAF000C3DE24 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		0F86605E19E6BAF000C3DE24 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		0F86605F19E6BAF000C3DE24 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		0F86606219E6BEF900C3DE24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0F86607C19E6C0E400C3DE24 /* NGAParallaxMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGAParallaxMotion.h; sourceTree = "<group>"; };
+		0F86607D19E6C0E400C3DE24 /* NGAParallaxMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGAParallaxMotion.m; sourceTree = "<group>"; };
+		0F86608019E6C6EC00C3DE24 /* kp_2dtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kp_2dtree.h; sourceTree = "<group>"; };
+		0F86608119E6C6EC00C3DE24 /* KPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAnnotation.h; sourceTree = "<group>"; };
+		0F86608219E6C6EC00C3DE24 /* KPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAnnotation.m; sourceTree = "<group>"; };
+		0F86608319E6C6EC00C3DE24 /* KPAnnotationTree_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAnnotationTree_Private.h; sourceTree = "<group>"; };
+		0F86608419E6C6EC00C3DE24 /* KPAnnotationTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAnnotationTree.h; sourceTree = "<group>"; };
+		0F86608519E6C6EC00C3DE24 /* KPAnnotationTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAnnotationTree.m; sourceTree = "<group>"; };
+		0F86608619E6C6EC00C3DE24 /* KPClusteringAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClusteringAlgorithm.h; sourceTree = "<group>"; };
+		0F86608719E6C6EC00C3DE24 /* KPClusteringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClusteringController.h; sourceTree = "<group>"; };
+		0F86608819E6C6EC00C3DE24 /* KPClusteringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClusteringController.m; sourceTree = "<group>"; };
+		0F86608919E6C6EC00C3DE24 /* KPGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPGeometry.h; sourceTree = "<group>"; };
+		0F86608A19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPGridClusteringAlgorithm_Private.h; sourceTree = "<group>"; };
+		0F86608B19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPGridClusteringAlgorithm.h; sourceTree = "<group>"; };
+		0F86608C19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPGridClusteringAlgorithm.m; sourceTree = "<group>"; };
+		0F86608D19E6C6EC00C3DE24 /* KPGridClusteringAlgorithmDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPGridClusteringAlgorithmDelegate.h; sourceTree = "<group>"; };
+		0F86608E19E6C6EC00C3DE24 /* NSArray+KP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KP.h"; sourceTree = "<group>"; };
+		0F86608F19E6C6EC00C3DE24 /* NSArray+KP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KP.m"; sourceTree = "<group>"; };
+		0F86609619E6C7A000C3DE24 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		0F86609719E6C7A000C3DE24 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		1A11A55D69FE25CA8C988F07 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		41BF5CC94B7A5B05B0CEBB7D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0D4DB019E7E4EA0031281E /* UIKit.framework in Frameworks */,
+				0F0D4DA819E7E4C70031281E /* Foundation.framework in Frameworks */,
+				0F86606319E6BEF900C3DE24 /* MapKit.framework in Frameworks */,
+				E1541123B802F98E87548D63 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +107,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0D4DC119E8616B0031281E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F86609619E6C7A000C3DE24 /* Annotation.h */,
+				0F86609719E6C7A000C3DE24 /* Annotation.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0F86602219E6B9F600C3DE24 = {
 			isa = PBXGroup;
 			children = (
 				0F86602D19E6B9F600C3DE24 /* Findstroem */,
 				0F86604719E6B9F600C3DE24 /* FindstroemTests */,
 				0F86602C19E6B9F600C3DE24 /* Products */,
+				0F0D4DA719E7E4C70031281E /* Foundation.framework */,
+				0F86606219E6BEF900C3DE24 /* MapKit.framework */,
+				0F0D4DAF19E7E4EA0031281E /* UIKit.framework */,
+				DDE1CA566A87F93B0A0D8B7C /* Pods */,
+				5CC60A03601B396F4EFCE269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +142,14 @@
 		0F86602D19E6B9F600C3DE24 /* Findstroem */ = {
 			isa = PBXGroup;
 			children = (
+				0F86606419E6C04800C3DE24 /* Components */,
+				0F86605B19E6BAC200C3DE24 /* Model */,
+				0F0D4DC119E8616B0031281E /* Views */,
 				0F86603219E6B9F600C3DE24 /* AppDelegate.h */,
 				0F86603319E6B9F600C3DE24 /* AppDelegate.m */,
-				0F86603519E6B9F600C3DE24 /* ViewController.h */,
-				0F86603619E6B9F600C3DE24 /* ViewController.m */,
-				0F86603819E6B9F600C3DE24 /* Main.storyboard */,
+				0F86605619E6BAB500C3DE24 /* MainViewController.h */,
+				0F86605719E6BAB500C3DE24 /* MainViewController.m */,
+				0F86605819E6BAB500C3DE24 /* MainViewController.xib */,
 				0F86603B19E6B9F600C3DE24 /* Images.xcassets */,
 				0F86603D19E6B9F600C3DE24 /* LaunchScreen.xib */,
 				0F86602E19E6B9F600C3DE24 /* Supporting Files */,
@@ -119,6 +183,76 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F86605B19E6BAC200C3DE24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F86605C19E6BAF000C3DE24 /* HomeModel.h */,
+				0F86605D19E6BAF000C3DE24 /* HomeModel.m */,
+				0F86605E19E6BAF000C3DE24 /* Location.h */,
+				0F86605F19E6BAF000C3DE24 /* Location.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F86606419E6C04800C3DE24 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F86607F19E6C6C400C3DE24 /* Kingpin Cluster */,
+				0F86607B19E6C0CB00C3DE24 /* Parallax */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0F86607B19E6C0CB00C3DE24 /* Parallax */ = {
+			isa = PBXGroup;
+			children = (
+				0F86607C19E6C0E400C3DE24 /* NGAParallaxMotion.h */,
+				0F86607D19E6C0E400C3DE24 /* NGAParallaxMotion.m */,
+			);
+			path = Parallax;
+			sourceTree = "<group>";
+		};
+		0F86607F19E6C6C400C3DE24 /* Kingpin Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				0F86608019E6C6EC00C3DE24 /* kp_2dtree.h */,
+				0F86608119E6C6EC00C3DE24 /* KPAnnotation.h */,
+				0F86608219E6C6EC00C3DE24 /* KPAnnotation.m */,
+				0F86608319E6C6EC00C3DE24 /* KPAnnotationTree_Private.h */,
+				0F86608419E6C6EC00C3DE24 /* KPAnnotationTree.h */,
+				0F86608519E6C6EC00C3DE24 /* KPAnnotationTree.m */,
+				0F86608619E6C6EC00C3DE24 /* KPClusteringAlgorithm.h */,
+				0F86608719E6C6EC00C3DE24 /* KPClusteringController.h */,
+				0F86608819E6C6EC00C3DE24 /* KPClusteringController.m */,
+				0F86608919E6C6EC00C3DE24 /* KPGeometry.h */,
+				0F86608A19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm_Private.h */,
+				0F86608B19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.h */,
+				0F86608C19E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m */,
+				0F86608D19E6C6EC00C3DE24 /* KPGridClusteringAlgorithmDelegate.h */,
+				0F86608E19E6C6EC00C3DE24 /* NSArray+KP.h */,
+				0F86608F19E6C6EC00C3DE24 /* NSArray+KP.m */,
+			);
+			name = "Kingpin Cluster";
+			path = src;
+			sourceTree = "<group>";
+		};
+		5CC60A03601B396F4EFCE269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A640B3FEEE7D8AA8B9368 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDE1CA566A87F93B0A0D8B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A11A55D69FE25CA8C988F07 /* Pods.debug.xcconfig */,
+				41BF5CC94B7A5B05B0CEBB7D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F86604E19E6B9F600C3DE24 /* Build configuration list for PBXNativeTarget "Findstroem" */;
 			buildPhases = (
+				CDDDFB2B2A12EA5C14A3506B /* Check Pods Manifest.lock */,
 				0F86602719E6B9F600C3DE24 /* Sources */,
 				0F86602819E6B9F600C3DE24 /* Frameworks */,
 				0F86602919E6B9F600C3DE24 /* Resources */,
+				096C899B4E53B3BD1284EC26 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,8 +335,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F86603A19E6B9F600C3DE24 /* Main.storyboard in Resources */,
 				0F86603F19E6B9F600C3DE24 /* LaunchScreen.xib in Resources */,
+				0F86605A19E6BAB500C3DE24 /* MainViewController.xib in Resources */,
 				0F86603C19E6B9F600C3DE24 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +350,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		096C899B4E53B3BD1284EC26 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDDDFB2B2A12EA5C14A3506B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F86602719E6B9F600C3DE24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F86603719E6B9F600C3DE24 /* ViewController.m in Sources */,
+				0F86606019E6BAF000C3DE24 /* HomeModel.m in Sources */,
+				0F86609219E6C6EC00C3DE24 /* KPClusteringController.m in Sources */,
+				0F86609319E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m in Sources */,
+				0F86606119E6BAF000C3DE24 /* Location.m in Sources */,
+				0F86609419E6C6EC00C3DE24 /* NSArray+KP.m in Sources */,
+				0F86609019E6C6EC00C3DE24 /* KPAnnotation.m in Sources */,
+				0F86609819E6C7A000C3DE24 /* Annotation.m in Sources */,
+				0F86609119E6C6EC00C3DE24 /* KPAnnotationTree.m in Sources */,
 				0F86603419E6B9F600C3DE24 /* AppDelegate.m in Sources */,
+				0F86605919E6BAB500C3DE24 /* MainViewController.m in Sources */,
 				0F86603119E6B9F600C3DE24 /* main.m in Sources */,
+				0F86607E19E6C0E400C3DE24 /* NGAParallaxMotion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +422,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0F86603819E6B9F600C3DE24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F86603919E6B9F600C3DE24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F86603D19E6B9F600C3DE24 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,9 +511,17 @@
 		};
 		0F86604F19E6B9F600C3DE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A11A55D69FE25CA8C988F07 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Findstroem/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = Findstroem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +529,17 @@
 		};
 		0F86605019E6B9F600C3DE24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BF5CC94B7A5B05B0CEBB7D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Findstroem/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = Findstroem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +598,7 @@
 				0F86605019E6B9F600C3DE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F86605119E6B9F600C3DE24 /* Build configuration list for PBXNativeTarget "FindstroemTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +607,7 @@
 				0F86605319E6B9F600C3DE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

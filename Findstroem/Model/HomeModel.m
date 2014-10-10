@@ -40,14 +40,14 @@
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    NSLog(error.description);
+//    NSLog(error.description);
     [self downloadItems];
     
 }
 
 -(void)connection:(NSURLConnection *)connection didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
-    NSLog(challenge.description);
+//    NSLog(challenge.description);
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
