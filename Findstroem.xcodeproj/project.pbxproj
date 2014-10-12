@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0F0D4DA819E7E4C70031281E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D4DA719E7E4C70031281E /* Foundation.framework */; };
 		0F0D4DB019E7E4EA0031281E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0D4DAF19E7E4EA0031281E /* UIKit.framework */; };
+		0F0D4DC819E98B980031281E /* PassThroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D4DC719E98B980031281E /* PassThroughView.m */; };
+		0F0D4DCC19EB319B0031281E /* FilterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D4DCA19EB319B0031281E /* FilterTableViewCell.m */; };
+		0F0D4DCD19EB319B0031281E /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0D4DCB19EB319B0031281E /* FilterTableViewCell.xib */; };
 		0F86603119E6B9F600C3DE24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86603019E6B9F600C3DE24 /* main.m */; };
 		0F86603419E6B9F600C3DE24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F86603319E6B9F600C3DE24 /* AppDelegate.m */; };
 		0F86603C19E6B9F600C3DE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F86603B19E6B9F600C3DE24 /* Images.xcassets */; };
@@ -43,6 +46,11 @@
 		0A9A640B3FEEE7D8AA8B9368 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0D4DA719E7E4C70031281E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F0D4DAF19E7E4EA0031281E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F0D4DC619E98B980031281E /* PassThroughView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassThroughView.h; path = Views/PassThroughView.h; sourceTree = "<group>"; };
+		0F0D4DC719E98B980031281E /* PassThroughView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassThroughView.m; path = Views/PassThroughView.m; sourceTree = "<group>"; };
+		0F0D4DC919EB319B0031281E /* FilterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterTableViewCell.h; path = Views/FilterTableViewCell.h; sourceTree = "<group>"; };
+		0F0D4DCA19EB319B0031281E /* FilterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterTableViewCell.m; path = Views/FilterTableViewCell.m; sourceTree = "<group>"; };
+		0F0D4DCB19EB319B0031281E /* FilterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterTableViewCell.xib; path = Views/FilterTableViewCell.xib; sourceTree = "<group>"; };
 		0F86602B19E6B9F600C3DE24 /* Findstroem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findstroem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F86602F19E6B9F600C3DE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86603019E6B9F600C3DE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +120,11 @@
 			children = (
 				0F86609619E6C7A000C3DE24 /* Annotation.h */,
 				0F86609719E6C7A000C3DE24 /* Annotation.m */,
+				0F0D4DC619E98B980031281E /* PassThroughView.h */,
+				0F0D4DC719E98B980031281E /* PassThroughView.m */,
+				0F0D4DC919EB319B0031281E /* FilterTableViewCell.h */,
+				0F0D4DCA19EB319B0031281E /* FilterTableViewCell.m */,
+				0F0D4DCB19EB319B0031281E /* FilterTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -336,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F86603F19E6B9F600C3DE24 /* LaunchScreen.xib in Resources */,
+				0F0D4DCD19EB319B0031281E /* FilterTableViewCell.xib in Resources */,
 				0F86605A19E6BAB500C3DE24 /* MainViewController.xib in Resources */,
 				0F86603C19E6B9F600C3DE24 /* Images.xcassets in Resources */,
 			);
@@ -391,6 +405,7 @@
 				0F86606019E6BAF000C3DE24 /* HomeModel.m in Sources */,
 				0F86609219E6C6EC00C3DE24 /* KPClusteringController.m in Sources */,
 				0F86609319E6C6EC00C3DE24 /* KPGridClusteringAlgorithm.m in Sources */,
+				0F0D4DC819E98B980031281E /* PassThroughView.m in Sources */,
 				0F86606119E6BAF000C3DE24 /* Location.m in Sources */,
 				0F86609419E6C6EC00C3DE24 /* NSArray+KP.m in Sources */,
 				0F86609019E6C6EC00C3DE24 /* KPAnnotation.m in Sources */,
@@ -398,6 +413,7 @@
 				0F86609119E6C6EC00C3DE24 /* KPAnnotationTree.m in Sources */,
 				0F86603419E6B9F600C3DE24 /* AppDelegate.m in Sources */,
 				0F86605919E6BAB500C3DE24 /* MainViewController.m in Sources */,
+				0F0D4DCC19EB319B0031281E /* FilterTableViewCell.m in Sources */,
 				0F86603119E6B9F600C3DE24 /* main.m in Sources */,
 				0F86607E19E6C0E400C3DE24 /* NGAParallaxMotion.m in Sources */,
 			);
