@@ -98,7 +98,7 @@ typedef enum {
 
     self.annotationTree = [[KPAnnotationTree alloc] initWithAnnotations:annotations];
 
-    [self updateVisibleMapAnnotationsOnMapView:NO];
+    [self updateVisibleMapAnnotationsOnMapView:YES];
 }
 
 - (void)refresh:(BOOL)animated {

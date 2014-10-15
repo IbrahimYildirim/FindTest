@@ -11,6 +11,7 @@
 @protocol HomeModalProtocol <NSObject>
 
 -(void)itemsDownloaded:(NSArray *)items;
+-(void)failedToDownload;
 
 @end
 

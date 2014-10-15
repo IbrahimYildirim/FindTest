@@ -41,7 +41,10 @@
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
 //    NSLog(error.description);
-    [self downloadItems];
+    if (self.delegate)
+    {
+        [self.delegate failedToDownload];
+    }
     
 }
 
@@ -75,7 +78,11 @@
         newLocation.zip = jsonElement[@"Zip"];
         newLocation.web = jsonElement[@"Web"];
         newLocation.phone = jsonElement[@"Phone"];
+        newLocation.imgURL = jsonElement[@"image_url"];
         
+        if ([jsonElement objectForKey:@"open"]) {
+                    newLocation.openingHours = jsonElement[@"open"];
+        }
         
         // Add this question to the locations array
         [_locations addObject:newLocation];

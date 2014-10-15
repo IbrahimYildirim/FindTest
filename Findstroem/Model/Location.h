@@ -19,5 +19,7 @@
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, strong) NSString *web;
 @property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *imgURL;
+@property (nonatomic, strong) NSString *openingHours;
 
 @end
