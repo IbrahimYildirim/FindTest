@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -93,7 +93,7 @@
                         <action selector="zoomInClicked:" destination="-1" eventType="touchUpInside" id="u2Q-Bl-NIu"/>
                     </connections>
                 </button>
-                <view hidden="YES" alpha="0.84999999999999987" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-nw-nGU" userLabel="Detail View">
+                <view hidden="YES" alpha="0.84999999999999987" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-nw-nGU" userLabel="Detail View">
                     <rect key="frame" x="97" y="8" width="300" height="300"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-Na-D4W" userLabel="Labels View">
@@ -943,14 +943,14 @@
                                             <variation key="widthClass=compact" constant="300"/>
                                         </constraint>
                                     </constraints>
-                                    <mutableString key="text">En smartphone der løber tør for strøm, er et velkendt problem i Danmark og resten af verden. Digitaliseringen, samt det stigende behov og brug af mobilen, betyder også at mange føler sig isoleret når mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbagehold i andre heensender. 
+                                    <string key="text">En smartphone der løber tør for strøm, er et velkendt problem i Danmark og resten af verden. Digitaliseringen, samt det stigende behov og brug af mobilen, betyder også at mange føler sig isoleret når mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbagehold i andre heensender. 
 
-FindStrøm, er ChargeSmart.dk’s nye gratis app og social service, som giver et overblik over, hvor smartphones og tablets kan oplades, når man er på farten, ude at shoppe, i byen – eller ganske enkelt – igen er ved at løbe tør for strøm og ikke har en ChargeSmart eller oplader med sig.
+FindStroem, er ChargeSmart.dk’s nye gratis app og social service, som giver et overblik over, hvor smartphones og tablets kan oplades, når man er på farten, ude at shoppe, i byen – eller ganske enkelt – igen er ved at løbe tør for strøm og ikke har en ChargeSmart eller oplader med sig.
 
 Vi tilbyder vore kunder hos ChargeSmart, uanset hvor de befinder, en sikkerhed for aldrig at løbe tør for strøm, og altid være ”tilgængelig”.
 Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele Danmarks befolkning, og samtidig fremme alternativ opladning både i Danmark og resten af verden.
 
-- Derfor startede vi FindStrøm</mutableString>
+- Derfor startede vi FindStroem</string>
                                     <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -1066,19 +1066,19 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                             <exclude reference="tOu-iV-z5l"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="Flc-DC-r2T"/>
-                            <exclude reference="bJX-Sk-BlD"/>
                             <exclude reference="2eb-Ci-Y6L"/>
                             <exclude reference="87w-wd-otZ"/>
                             <exclude reference="SY4-Vl-KSD"/>
-                            <exclude reference="2SQ-HS-0bc"/>
-                            <exclude reference="DHb-h0-24P"/>
-                            <exclude reference="SnG-6w-dSt"/>
+                            <exclude reference="pMU-7K-8AK"/>
+                            <exclude reference="Flc-DC-r2T"/>
+                            <exclude reference="bJX-Sk-BlD"/>
                             <exclude reference="8zr-YQ-dUg"/>
                             <exclude reference="BxI-DJ-ewC"/>
                             <exclude reference="MwM-8U-zQe"/>
                             <exclude reference="pRl-Tr-qn1"/>
-                            <exclude reference="pMU-7K-8AK"/>
+                            <exclude reference="2SQ-HS-0bc"/>
+                            <exclude reference="DHb-h0-24P"/>
+                            <exclude reference="SnG-6w-dSt"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -1089,19 +1089,19 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                             <include reference="tOu-iV-z5l"/>
                         </mask>
                         <mask key="constraints">
-                            <include reference="Flc-DC-r2T"/>
-                            <include reference="bJX-Sk-BlD"/>
                             <include reference="2eb-Ci-Y6L"/>
                             <include reference="87w-wd-otZ"/>
                             <include reference="SY4-Vl-KSD"/>
-                            <include reference="2SQ-HS-0bc"/>
-                            <include reference="DHb-h0-24P"/>
-                            <include reference="SnG-6w-dSt"/>
+                            <include reference="pMU-7K-8AK"/>
+                            <include reference="Flc-DC-r2T"/>
+                            <include reference="bJX-Sk-BlD"/>
                             <include reference="8zr-YQ-dUg"/>
                             <include reference="BxI-DJ-ewC"/>
                             <include reference="MwM-8U-zQe"/>
                             <include reference="pRl-Tr-qn1"/>
-                            <include reference="pMU-7K-8AK"/>
+                            <include reference="2SQ-HS-0bc"/>
+                            <include reference="DHb-h0-24P"/>
+                            <include reference="SnG-6w-dSt"/>
                         </mask>
                     </variation>
                 </view>
@@ -1418,7 +1418,8 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                                     <exclude reference="Z6O-iC-Ldq"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact">
+                            <variation key="widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="21" y="39" width="182" height="35"/>
                                 <mask key="constraints">
                                     <exclude reference="O1U-Mw-IPL"/>
                                     <exclude reference="Z6O-iC-Ldq"/>
@@ -1432,7 +1433,7 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                             <variation key="widthClass=compact" constant="17"/>
                         </constraint>
                         <constraint firstItem="MwV-bD-SWz" firstAttribute="centerY" secondItem="7Zd-pO-MU6" secondAttribute="centerY" multiplier="1.2" constant="3" id="6FW-pR-yYb">
-                            <variation key="widthClass=compact" constant="5"/>
+                            <variation key="widthClass=compact" constant="7.3000000000000043"/>
                         </constraint>
                         <constraint firstAttribute="trailing" secondItem="wit-Ug-oEY" secondAttribute="trailing" id="Cka-1e-izm"/>
                         <constraint firstAttribute="trailing" secondItem="XTK-6h-FUd" secondAttribute="trailing" id="HSs-jc-dDk"/>
@@ -1460,18 +1461,18 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                         <mask key="constraints">
                             <exclude reference="Y8t-Ff-nLX"/>
                             <exclude reference="cPN-T4-qL2"/>
-                            <exclude reference="HSs-jc-dDk"/>
-                            <exclude reference="WRy-7N-hWB"/>
-                            <exclude reference="d2a-0e-mh1"/>
-                            <exclude reference="q7F-5o-lCc"/>
-                            <exclude reference="Cka-1e-izm"/>
-                            <exclude reference="J8A-xJ-7QT"/>
-                            <exclude reference="f3u-AH-76i"/>
-                            <exclude reference="m4q-ib-0VR"/>
                             <exclude reference="50b-I1-n4n"/>
                             <exclude reference="6FW-pR-yYb"/>
                             <exclude reference="pXS-Gl-ATy"/>
                             <exclude reference="wdP-t2-rNN"/>
+                            <exclude reference="Cka-1e-izm"/>
+                            <exclude reference="J8A-xJ-7QT"/>
+                            <exclude reference="f3u-AH-76i"/>
+                            <exclude reference="m4q-ib-0VR"/>
+                            <exclude reference="HSs-jc-dDk"/>
+                            <exclude reference="WRy-7N-hWB"/>
+                            <exclude reference="d2a-0e-mh1"/>
+                            <exclude reference="q7F-5o-lCc"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -1483,18 +1484,18 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                         <mask key="constraints">
                             <exclude reference="Y8t-Ff-nLX"/>
                             <include reference="cPN-T4-qL2"/>
-                            <include reference="HSs-jc-dDk"/>
-                            <include reference="WRy-7N-hWB"/>
-                            <include reference="d2a-0e-mh1"/>
-                            <include reference="q7F-5o-lCc"/>
-                            <include reference="Cka-1e-izm"/>
-                            <include reference="J8A-xJ-7QT"/>
-                            <include reference="f3u-AH-76i"/>
-                            <include reference="m4q-ib-0VR"/>
                             <include reference="50b-I1-n4n"/>
                             <include reference="6FW-pR-yYb"/>
                             <include reference="pXS-Gl-ATy"/>
                             <exclude reference="wdP-t2-rNN"/>
+                            <include reference="Cka-1e-izm"/>
+                            <include reference="J8A-xJ-7QT"/>
+                            <include reference="f3u-AH-76i"/>
+                            <include reference="m4q-ib-0VR"/>
+                            <include reference="HSs-jc-dDk"/>
+                            <include reference="WRy-7N-hWB"/>
+                            <include reference="d2a-0e-mh1"/>
+                            <include reference="q7F-5o-lCc"/>
                         </mask>
                     </variation>
                 </view>
@@ -1589,10 +1590,19 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                     <exclude reference="aWd-2n-rzS"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="9lX-eL-QiW"/>
+                    <exclude reference="Xmw-zL-cTA"/>
+                    <exclude reference="Lgc-fx-DzU"/>
+                    <exclude reference="cuZ-eb-IAK"/>
+                    <exclude reference="Gt1-p6-slg"/>
+                    <exclude reference="Nev-3a-a58"/>
                     <exclude reference="Muu-bo-epS"/>
                     <exclude reference="OYh-wV-oMP"/>
                     <exclude reference="gSg-M5-NUl"/>
                     <exclude reference="w67-7R-HiL"/>
+                    <exclude reference="0uk-Xx-JlE"/>
+                    <exclude reference="TYi-64-b9p"/>
+                    <exclude reference="XAi-F4-zFD"/>
                     <exclude reference="0Rx-7w-0nI"/>
                     <exclude reference="2av-O4-GP0"/>
                     <exclude reference="Nq7-UL-roW"/>
@@ -1600,26 +1610,17 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                     <exclude reference="BXZ-MR-txv"/>
                     <exclude reference="aO8-Eb-HDq"/>
                     <exclude reference="rlI-GA-rH0"/>
-                    <exclude reference="1R1-fY-pE5"/>
-                    <exclude reference="98Z-Js-Cci"/>
-                    <exclude reference="rss-dA-Cah"/>
-                    <exclude reference="wPo-U5-VTX"/>
                     <exclude reference="DOu-gm-mnE"/>
                     <exclude reference="EOb-yj-eZs"/>
                     <exclude reference="giZ-Wx-wQS"/>
-                    <exclude reference="Gt1-p6-slg"/>
-                    <exclude reference="Nev-3a-a58"/>
-                    <exclude reference="9lX-eL-QiW"/>
-                    <exclude reference="Xmw-zL-cTA"/>
-                    <exclude reference="Lgc-fx-DzU"/>
-                    <exclude reference="cuZ-eb-IAK"/>
                     <exclude reference="GEg-sU-tZb"/>
                     <exclude reference="hZS-Px-tWY"/>
                     <exclude reference="rI0-Qp-YVo"/>
                     <exclude reference="yU5-3z-12F"/>
-                    <exclude reference="0uk-Xx-JlE"/>
-                    <exclude reference="TYi-64-b9p"/>
-                    <exclude reference="XAi-F4-zFD"/>
+                    <exclude reference="1R1-fY-pE5"/>
+                    <exclude reference="98Z-Js-Cci"/>
+                    <exclude reference="rss-dA-Cah"/>
+                    <exclude reference="wPo-U5-VTX"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -1635,10 +1636,19 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                     <include reference="aWd-2n-rzS"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="9lX-eL-QiW"/>
+                    <include reference="Xmw-zL-cTA"/>
+                    <include reference="Lgc-fx-DzU"/>
+                    <include reference="cuZ-eb-IAK"/>
+                    <include reference="Gt1-p6-slg"/>
+                    <include reference="Nev-3a-a58"/>
                     <include reference="Muu-bo-epS"/>
                     <include reference="OYh-wV-oMP"/>
                     <include reference="gSg-M5-NUl"/>
                     <include reference="w67-7R-HiL"/>
+                    <include reference="0uk-Xx-JlE"/>
+                    <include reference="TYi-64-b9p"/>
+                    <include reference="XAi-F4-zFD"/>
                     <include reference="0Rx-7w-0nI"/>
                     <include reference="2av-O4-GP0"/>
                     <include reference="Nq7-UL-roW"/>
@@ -1646,26 +1656,17 @@ Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele
                     <include reference="BXZ-MR-txv"/>
                     <include reference="aO8-Eb-HDq"/>
                     <include reference="rlI-GA-rH0"/>
-                    <include reference="1R1-fY-pE5"/>
-                    <exclude reference="98Z-Js-Cci"/>
-                    <include reference="rss-dA-Cah"/>
-                    <include reference="wPo-U5-VTX"/>
                     <include reference="DOu-gm-mnE"/>
                     <include reference="EOb-yj-eZs"/>
                     <include reference="giZ-Wx-wQS"/>
-                    <include reference="Gt1-p6-slg"/>
-                    <include reference="Nev-3a-a58"/>
-                    <include reference="9lX-eL-QiW"/>
-                    <include reference="Xmw-zL-cTA"/>
-                    <include reference="Lgc-fx-DzU"/>
-                    <include reference="cuZ-eb-IAK"/>
                     <include reference="GEg-sU-tZb"/>
                     <include reference="hZS-Px-tWY"/>
                     <include reference="rI0-Qp-YVo"/>
                     <exclude reference="yU5-3z-12F"/>
-                    <include reference="0uk-Xx-JlE"/>
-                    <include reference="TYi-64-b9p"/>
-                    <include reference="XAi-F4-zFD"/>
+                    <include reference="1R1-fY-pE5"/>
+                    <exclude reference="98Z-Js-Cci"/>
+                    <include reference="rss-dA-Cah"/>
+                    <include reference="wPo-U5-VTX"/>
                 </mask>
             </variation>
         </view>

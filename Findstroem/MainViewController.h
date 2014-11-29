@@ -11,5 +11,6 @@
 @interface MainViewController : UIViewController
 
 -(void)becameActiveAgain;
+-(void)isLeavingScreen;
 
 @end

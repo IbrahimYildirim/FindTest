@@ -34,6 +34,7 @@
     BOOL _menuHidden;
     BOOL _failedToLoad;
     BOOL _showB2BInfo;
+    BOOL _movedLegalLbl;
 //    CLLocationManager *_locationManager;
 }
 
@@ -140,23 +141,30 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     //Move the "Legal" label in the app so it will still be visible with the parallax effect
-    UILabel *attributionLabel = [_mapView.subviews objectAtIndex:1];
-    attributionLabel.center = CGPointMake(attributionLabel.center.x + 30.0f, attributionLabel.center.y-20.0f);
-
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
+    if(!_movedLegalLbl){
+        UILabel *attributionLabel = [_mapView.subviews objectAtIndex:1];
+        attributionLabel.center = CGPointMake(attributionLabel.center.x + 30.0f, attributionLabel.center.y-20.0f);
+        _movedLegalLbl = YES;
+    }
+    
     if (!_menuHidden) {
         [self controlClicked:self];
     }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)isLeavingScreen
+{
+    if (!_menuHidden) {
+        [self controlClicked:self];
+    }
+}
 
 -(void)becameActiveAgain
 {
@@ -177,8 +185,6 @@
             [_homeModal downloadItems];
         }
     }
-    
-    //TO DO - 
 }
 
 #pragma mark - HomeModel Delegate
@@ -196,6 +202,10 @@
     
     if (items.count > 0) {
         _arrShopData = items;
+    }
+    else
+    {
+        NSLog(@"Whazaa");
     }
     
     //Update Categories
@@ -431,9 +441,9 @@
 
 -(IBAction)b2bClicked:(id)sender
 {
-    NSString *businessString = @"For 20 år siden kunne ingen forestille sig, at der skulle være Wi-Fi adgang, for spisende gæster på cafeer og restauranter. Men i dag er det en selvfølge, og næsten alle restaurationer tilbyder Wi-Fi. Nutidens digitalisering, samt det stigende behov og brug af mobilen betyder dog også, at mange føler sig isoleret hvis mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbageholdt i andre heensender. – Vi tilbyder Jer den ideelle løsning, for at dække kundernes nye digitale behov, og sammen kan vi give dine nuværende og nye kunder en bedre dag – hvis nu mobilen er ved at løbe tør for strøm igen. \n \nKontakt os på: +45 225 95 225 eller tilbydstrom@findstrom.dk \n\nDu kan også lære mere på www.findstroem.dk/for-virksomheder";
+    NSString *businessString = @"For 20 år siden kunne ingen forestille sig, at der skulle være Wi-Fi adgang, for spisende gæster på cafeer og restauranter. Men i dag er det en selvfølge, og næsten alle restaurationer tilbyder Wi-Fi. Nutidens digitalisering, samt det stigende behov og brug af mobilen betyder dog også, at mange føler sig isoleret hvis mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbageholdt i andre heensender. – Vi tilbyder Jer den ideelle løsning, for at dække kundernes nye digitale behov, og sammen kan vi give dine nuværende og nye kunder en bedre dag – hvis nu mobilen er ved at løbe tør for strøm igen. \n \nKontakt os på: +45 225 95 225 eller tilbydstrom@findstroem.dk \n\nDu kan også lære mere på www.findstroem.dk/for-virksomheder";
     
-    NSString *publicInfoString = @"En smartphone der løber tør for strøm, er et velkendt problem i Danmark og resten af verden. Digitaliseringen, samt det stigende behov og brug af mobilen, betyder også at mange føler sig isoleret når mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbagehold i andre heensender. \n\nFindStrøm, er ChargeSmart.dk’s nye gratis app og social service, som giver et overblik over, hvor smartphones og tablets kan oplades, når man er på farten, ude at shoppe, i byen – eller ganske enkelt igen er ved at løbe tør for strøm og ikke har en ChargeSmart eller oplader med sig.\n\nVi tilbyder vore kunder hos ChargeSmart, uanset hvor de befinder, en sikkerhed for aldrig at løbe tør for strøm, og altid være tilgængelig. Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele Danmarks befolkning, og samtidig fremme alternativ opladning både i Danmark og resten af verden.\n\n- Derfor startede vi FindStrøm";
+    NSString *publicInfoString = @"En smartphone der løber tør for strøm, er et velkendt problem i Danmark og resten af verden. Digitaliseringen, samt det stigende behov og brug af mobilen, betyder også at mange føler sig isoleret når mobilen går ud, og lige så mange bliver forhindret i deres arbejde eller tilbagehold i andre heensender. \n\nFindStrøm, er ChargeSmart.dk’s nye gratis app og social service, som giver et overblik over, hvor smartphones og tablets kan oplades, når man er på farten, ude at shoppe, i byen – eller ganske enkelt igen er ved at løbe tør for strøm og ikke har en ChargeSmart eller oplader med sig.\n\nVi tilbyder vore kunder hos ChargeSmart, uanset hvor de befinder, en sikkerhed for aldrig at løbe tør for strøm, og altid være tilgængelig. Vi har en målsætning om, at kunne tilbyde denne sikkerhed og service, til hele Danmarks befolkning, og samtidig fremme alternativ opladning både i Danmark og resten af verden.\n\n- Derfor startede vi FindStroem";
     
     if (!_showB2BInfo) {
         _lblInfoContent.text = businessString;
@@ -631,13 +641,20 @@
 
 -(IBAction)shareClicked:(id)sender
 {
-    NSString *message = @"Tjek FindStrøm appen fra ChargeSmart ud! http://itunes.apple.com/app/id930100958";
-    UIImage *image = [UIImage imageNamed:@"DenmarkIcon"];
-    NSArray *arrayOfActivityItems = [NSArray arrayWithObjects:message, image, nil];
+    //[self performSelectorInBackground:@selector(controlClicked:) withObject:self];
+    
+    NSString *message = @"Tjek FindStroem appen fra ChargeSmart ud! http://itunes.apple.com/app/id930100958";
+    //UIImage *image = [UIImage imageNamed:@"AppIcon"];
+    NSArray *arrayOfActivityItems = [NSArray arrayWithObjects:message, nil];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]
                                             initWithActivityItems:arrayOfActivityItems applicationActivities:nil];
     
     [self presentViewController:activityVC animated:YES completion:nil];
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        [self controlClicked:self];
+//    });
 }
 
 -(IBAction)reviewClicked:(id)sender
@@ -725,7 +742,7 @@
             
             CLLocationCoordinate2D center = cluster.coordinate;
             
-            MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(center, 300.f, 300.f);
+            MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(center, 300.f, 300.0f);
             viewRegion.center.latitude += 0.0008f;//viewRegion.span.latitudeDelta * 0.10f;
         
             [self.mapView setRegion:viewRegion animated:YES];
@@ -817,7 +834,7 @@
     
     if(_showDetailView)
     {
-        [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(_selectedAnnotation.coordinate,5.0f, 5.0f)
+        [self.mapView setRegion: MKCoordinateRegionMakeWithDistance(_selectedAnnotation.coordinate, 5.0f, 5.0f)
                        animated:YES];
     }
 }
@@ -942,16 +959,18 @@
         anim.toValue = @(1.0);
         [btn pop_addAnimation:anim forKey:@"fade"];
         
-        //Fade Animation - Home
-        POPBasicAnimation *homeAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
-        homeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        homeAnim.fromValue = @(0.8);
-        homeAnim.toValue = @(1.0);
-        [_imgFSHome pop_addAnimation:homeAnim forKey:@"fadeHome"];
-        
-        
         delay += 0.08f;
     }
+    
+    //Fade Animation - Home
+    POPBasicAnimation *homeAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
+    homeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    homeAnim.fromValue = @(0.8);
+    homeAnim.toValue = @(1.0);
+    [_imgFSHome pop_addAnimation:homeAnim forKey:@"fadeHome"];
+    
+    [self.vwFSMenu layoutIfNeeded];
+    
     [self.view bringSubviewToFront:_vwFSMenu];
 }
 
@@ -972,12 +991,15 @@
         anim.toValue = @(0.0);
         [btn pop_addAnimation:anim forKey:@"fade"];
         
-        POPBasicAnimation *homeAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
-        homeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        homeAnim.fromValue = @(1.0);
-        homeAnim.toValue = @(0.8);
-        [_imgFSHome pop_addAnimation:homeAnim forKey:@"fadeHome"];
     }
+    
+    POPBasicAnimation *homeAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
+    homeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    homeAnim.fromValue = @(1.0);
+    homeAnim.toValue = @(0.8);
+    [_imgFSHome pop_addAnimation:homeAnim forKey:@"fadeHome"];
+    
+    [self.vwFSMenu layoutIfNeeded];
     [self.view bringSubviewToFront:_vwFSMenu];
 }
 
